@@ -1,0 +1,82 @@
+
+/* General styling for dark theme */
+body {
+  padding-top:25px;
+  background-color: black;
+  font-family: Arial, sans-serif;
+}
+
+/* Top Controls */
+.controls-container.top-controls {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  background-color: coral;
+  border-bottom: 2px solid white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+}
+
+.controls-container.bottom-controls {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: coral;
+  border-top: 2px solid white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.slider-container {
+  margin: 0 20px;
+  display: inline-block;
+}
+
+button {
+  background-color: #444;
+  color: #eee;
+  border: none;
+  padding: 6px 12px;
+  margin: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+input[type="range"] {
+    width: 90px;
+}
+
+input[type="number"]{
+  width: 95px;
+}
+
+input[type="text"]{
+  width: 95px;
+}
+
+#draw, #player {
+  position: absolute;
+}
+
+#map_image {
+  position: absolute; /* or 'absolute', depending on your layout needs */
+  z-index: -1; /* Keep map image below the canvas viewport */
+}
+
+#draw {
+  z-index: 0;
+}
+
+#player {
+  z-index: 1;
+}
